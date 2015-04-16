@@ -1,6 +1,8 @@
 package com.example.wingwing.first;
 
+import android.annotation.TargetApi;
 import android.app.Activity;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.ViewTreeObserver;
 import android.widget.GridView;
@@ -36,6 +38,7 @@ public class MainActivity extends Activity {
         mPhotoWall.getViewTreeObserver().addOnGlobalLayoutListener(
                 new ViewTreeObserver.OnGlobalLayoutListener() {
 
+                    @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
                     @Override
                     public void onGlobalLayout() {
                         final int numColumns = (int) Math.floor(mPhotoWall
@@ -46,7 +49,7 @@ public class MainActivity extends Activity {
                                     - mImageThumbSpacing;
                             mAdapter.setItemHeight(columnWidth);
                             mPhotoWall.getViewTreeObserver()
-                                    .removeGlobalOnLayoutListener(this);
+                                    .removeOnGlobalLayoutListener(this);
                         }
                     }
                 });
