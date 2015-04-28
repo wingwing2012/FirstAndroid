@@ -21,6 +21,10 @@
         <activity
             android:name=".CustomViewActivity"
             android:label="@string/title_activity_custom_view" >
+        </activity>
+        <activity
+            android:name=".GalleryActivity"
+            android:label="@string/title_activity_gallary" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
