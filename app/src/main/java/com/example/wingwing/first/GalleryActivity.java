@@ -62,6 +62,7 @@ public class GalleryActivity extends Activity {
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
+                //hello
             }
         });
     }
