@@ -7,4 +7,5 @@
     <string name="ok">OK</string>
     <string name="title_activity_custom_view">CustomViewActivity</string>
     <string name="title_activity_gallary">GallaryActivity</string>
+    <string name="title_activity_expandable_list">ExpandableListActivity</string>
 </resources>

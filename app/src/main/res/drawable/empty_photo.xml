@@ -5,4 +5,7 @@
     <item android:drawable="@drawable/autumn3"></item>
     <item android:drawable="@drawable/autumn4"></item>
     <item android:drawable="@drawable/autumn5"></item>
+    <item android:drawable="@drawable/t"></item>
+    <item android:drawable="@drawable/p"></item>
+    <item android:drawable="@drawable/z"></item>
 </selector>
