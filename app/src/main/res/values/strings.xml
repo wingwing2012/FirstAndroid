@@ -13,4 +13,5 @@
     <string name="title_activity_other">otheractivity</string>
     <string name="title_activity_configuration_test">ConfigurationTestActivity</string>
     <string name="title_activity_call_prime">CallPrimeActivity</string>
+    <string name="title_activity_async_task_test">AsyncTaskTest</string>
 </resources>
