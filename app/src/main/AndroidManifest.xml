@@ -4,6 +4,8 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
 
     <application
         android:allowBackup="true"
@@ -25,6 +27,54 @@
         <activity
             android:name=".GalleryActivity"
             android:label="@string/title_activity_gallary" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".ExpandableListActivity"
+            android:label="@string/title_activity_expandable_list" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".AdapterViewFlipperActivity"
+            android:label="@string/title_activity_adapter_view_flipper" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".NotificationTestActivity"
+            android:label="@string/title_activity_notification_test" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".OtherActivity"
+            android:label="@string/title_activity_other" >
+        </activity>
+        <activity
+            android:name=".ConfigurationTestActivity"
+            android:label="@string/title_activity_configuration_test" >
             <!--<intent-filter>-->
                 <!--<action android:name="android.intent.action.MAIN" />-->
 
@@ -32,8 +82,8 @@
             <!--</intent-filter>-->
         </activity>
         <activity
-            android:name=".ExpandableListActivity"
-            android:label="@string/title_activity_expandable_list" >
+            android:name=".CallPrimeActivity"
+            android:label="@string/title_activity_call_prime" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

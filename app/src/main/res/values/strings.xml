@@ -8,4 +8,9 @@
     <string name="title_activity_custom_view">CustomViewActivity</string>
     <string name="title_activity_gallary">GallaryActivity</string>
     <string name="title_activity_expandable_list">ExpandableListActivity</string>
+    <string name="title_activity_adapter_view_flipper">AdapterViewFlipperActivity</string>
+    <string name="title_activity_notification_test">NotificationTestActivity</string>
+    <string name="title_activity_other">otheractivity</string>
+    <string name="title_activity_configuration_test">ConfigurationTestActivity</string>
+    <string name="title_activity_call_prime">CallPrimeActivity</string>
 </resources>

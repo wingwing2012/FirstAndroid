@@ -52,7 +52,7 @@ public class GalleryActivity extends Activity {
                 imageView.setLayoutParams(new Gallery.LayoutParams(75, 100));
                 TypedArray typedArray = obtainStyledAttributes(R.styleable.Gallery);
                 imageView.setBackgroundResource(typedArray.getResourceId(R.styleable.Gallery_Item_background, 0));
-                return null;
+                return imageView;
             }
         };
         gallery.setAdapter(adapter);
