@@ -86,15 +86,20 @@
         <activity
             android:name=".CallPrimeActivity"
             android:label="@string/title_activity_call_prime" >
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity
+            android:name=".AsyncTaskTest"
+            android:label="@string/title_activity_async_task_test" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name=".AsyncTaskTest"
-            android:label="@string/title_activity_async_task_test" >
         </activity>
     </application>
 

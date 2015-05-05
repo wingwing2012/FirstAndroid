@@ -53,7 +53,7 @@ public class AsyncTaskTest extends ActionBarActivity {
 
     public void download(View view) throws MalformedURLException {
         DownTask task = new DownTask(this);
-        task.execute(new URL("https://www.crazyit.org/ethos.php"));
+        task.execute(new URL("http://www.crazyit.org/ethos.php"));
     }
 
     class DownTask extends AsyncTask<URL, Integer, String> {
