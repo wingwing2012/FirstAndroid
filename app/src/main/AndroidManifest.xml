@@ -6,7 +6,8 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.FLASHLIGHT" />
-
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -106,26 +107,29 @@
         <activity
             android:name=".IntentTest"
             android:label="@string/title_activity_intent_test" >
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".SecondActivity"
-            android:label="@string/title_activity_intent_test" >
-            <intent-filter>
-                <action android:name="com.example.wingwing.first.intentTestSecondA" />
+            android:label="@string/title_activity_second_activity" >
+            <intent-filter android:priority="-1">
+                <action android:name="android.intent.action.VIEW" />
+               <!-- <action android:name="com.example.wingwing.first.intentTestSecondA" />-->
                 <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="http" android:host="www.baidu.com"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".ThirdActivity"
-            android:label="@string/title_activity_intent_test" >
+            android:label="@string/title_activity_third_activity" >
             <intent-filter>
                 <action android:name="com.example.wingwing.first.intentTestSecondA" />
                 <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.example.wingwing.first.MY_CATEGORY" />
             </intent-filter>
         </activity>
     </application>

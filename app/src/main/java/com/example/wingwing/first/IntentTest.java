@@ -1,6 +1,7 @@
 package com.example.wingwing.first;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
@@ -39,8 +40,24 @@ public class IntentTest extends ActionBarActivity {
     }
 
     public void launch(View view) {
-        Intent intent = new Intent();
-        intent.setAction("com.example.wingwing.first.intentTestSecondA"); //������Intent android.content.Intent.setAction(String action)
+//        Intent intent = new Intent();
+//        intent.setAction("com.example.wingwing.first.intentTestSecondA"); //方法：Intent android.content.Intent.setAction(String action)
+//        intent.addCategory("com.example.wingwing.first.MY_CATEGORY");// only the same category in the intent-filter will be displayed
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("http://www.baidu.com"));
+        startActivity(intent);
+    }
+
+    public void callPhone(View view) {
+        Intent intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(Uri.parse("tel:10086"));
+        startActivity(intent);
+    }
+
+    public void sendTo(View view) {
+        Intent intent = new Intent(Intent.ACTION_SENDTO);
+        intent.setData(Uri.parse("smsto:18780260012"));
+        intent.putExtra("sms_body", "具体短信内容"); //"sms_body"为固定内容
         startActivity(intent);
     }
 }

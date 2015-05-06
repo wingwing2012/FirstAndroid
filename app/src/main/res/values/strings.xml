@@ -15,4 +15,6 @@
     <string name="title_activity_call_prime">CallPrimeActivity</string>
     <string name="title_activity_async_task_test">AsyncTaskTest</string>
     <string name="title_activity_intent_test">IntentTest</string>
+    <string name="title_activity_second_activity">SecondActivity</string>
+    <string name="title_activity_third_activity">ThirdActivity</string>
 </resources>
